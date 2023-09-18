@@ -59,7 +59,7 @@ function Navbar() {
                </div>
                <div className="navbar-end">
                   <label className="swap swap-rotate">
-                     <input type="checkbox" onClick={handleTheme} checked={theme === themes.light ? false : true} />
+                     <input type="checkbox" onChange={handleTheme} checked={theme === themes.light ? false : true} />
                      <BsSunFill className="swap-on h-4 w-4" />
                      <BsMoonFill className="swap-off h-4 w-4" />
                   </label>
