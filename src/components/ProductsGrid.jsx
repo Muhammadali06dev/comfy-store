@@ -17,7 +17,7 @@ function ProductsGrid() {
                   <figure>
                      <img src={image} alt="" className="rounded-xl h-64 md:h-48 w-full object-cover" />
                   </figure>
-                  <div className="card-body item-center text-center">
+                  <div className="card-body items-center text-center">
                      <h2 className="card-title capitalize tracking-wider">{title}</h2>
                      <span className="text-secondary font-medium ">{dollarAmount}</span>
                   </div>
