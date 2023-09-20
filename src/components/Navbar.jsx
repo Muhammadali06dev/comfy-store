@@ -13,7 +13,7 @@ const themes = {
 
 
 function Navbar() {
-   const [theme, setTheme] = useState(localStorage.getItem('theme' || themes.light))
+   const [theme, setTheme] = useState(localStorage.getItem('theme') || themes.light)
    const handleTheme = (e) => {
       if (e.target.checked) {
          setTheme(themes.dark)
