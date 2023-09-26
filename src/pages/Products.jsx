@@ -4,9 +4,8 @@ import { customFetch } from "../utils"
 
 const url = "/products"
 export const loader = async ({ request }) => {
-   console.log(request)
    const params = Object.fromEntries([
-      ...new URL(request.url).searchParams.entries()
+      ... new URL(request.url).searchParams.entries()
    ])
    const response = await customFetch(url, {
       params
