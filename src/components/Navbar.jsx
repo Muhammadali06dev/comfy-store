@@ -3,6 +3,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 import Navlinks from "./Navlinks"
 import { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 
 const themes = {
    light: 'winter',
@@ -22,6 +23,9 @@ function Navbar() {
       }
 
    }
+
+   const { numItemsInCart, cartItems } = useSelector((state) => state.cartState)
+   console.log(cartItems)
 
    useEffect(() => {
       localStorage.setItem('theme', theme)
@@ -67,7 +71,7 @@ function Navbar() {
                      <div className="indicator">
                         <BsCart3 className="w-6 h-6" />
                         <span className="badge badge-sm badge-primary indicator-item">
-                           7
+                           {numItemsInCart}
                         </span>
                      </div>
                   </NavLink>
