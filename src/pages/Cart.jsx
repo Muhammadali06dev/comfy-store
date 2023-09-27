@@ -53,10 +53,10 @@ function Cart() {
                   )
                })}
             </div>
-            <div className="flex flex-col gap-y-10 grow-0 basis-80">
+            <div className="flex flex-col gap-y-10 grow-0 basis-80 font-medium">
                <div className="card bg-base-200">
                   <div className="card-body">
-                     <p className="flex justify-between text-xs border-b border-base-300 pb-2">
+                     <p className="flex  justify-between text-xs border-b border-base-300 pb-2">
                         <span>Subtotal</span>
                         <span>{formatPrice(cartTotal)}</span>
                      </p>
